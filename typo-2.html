@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="typo-2.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <h1>Muhammad</h1>
+    </section>
+    <script>
+        var words = $("h1").text().split("");
+        $("h1").empty();
+        $.each(words, function (i, v) {
+            $("h1").append($("<span>").text(v));
+        });
+    </script>
+</body>
+
+</html>

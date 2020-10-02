@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container h1:before {
+    content: '';
+    animation: display 5s infinite;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 4rem;
+}
+@media (min-width:700px){
+    .container h1:before {
+        font-size: 8rem;
+    }
+}
+@keyframes display {
+    0% {content: 'Web Design';}
+    33% {content: 'Web Development';}
+    66% {content: 'Web Launch'; }
+    99% {content: 'Web Design'; }
+}
